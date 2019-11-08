@@ -37,8 +37,7 @@ class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___, UIScrollViewDeleg
             secondBloc.alpha = 1
             thirdBloc.alpha = 1
             scrollView.isUserInteractionEnabled = false
-        }
-        else if device.isPhone {
+        } else if device.isPhone {
             firstBloc.alpha = 0.4
             secondBloc.alpha = 1
             thirdBloc.alpha = 0.4
@@ -258,7 +257,7 @@ class ___TABLE___CustomProgressBarDetail: UIView {
     }
 }
 
-// MARK:- View animation extension
+// MARK: - View animation extension
 private extension UIView {
     func shakeright() {
         let animation = CABasicAnimation(keyPath: "position")
