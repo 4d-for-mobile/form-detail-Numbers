@@ -7,7 +7,10 @@
 
 import UIKit
 import QMobileUI
-import DeviceKit
+import QMobileAPI
+#if canImport(DeviceKit) 
+  import DeviceKit
+#endif 
 
 /// Generated details form for ___TABLE___ table.
 class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___, UIScrollViewDelegate {
@@ -37,7 +40,7 @@ class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___, UIScrollViewDeleg
             secondBloc.alpha = 1
             thirdBloc.alpha = 1
             scrollView.isUserInteractionEnabled = false
-        } else if device.isPhone {
+        } else {
             firstBloc.alpha = 0.4
             secondBloc.alpha = 1
             thirdBloc.alpha = 0.4
