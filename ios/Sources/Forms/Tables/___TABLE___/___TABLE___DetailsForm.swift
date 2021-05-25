@@ -8,9 +8,9 @@
 import UIKit
 import QMobileUI
 import QMobileAPI
-#if canImport(DeviceKit) 
+#if canImport(DeviceKit)
   import DeviceKit
-#endif 
+#endif
 
 /// Generated details form for ___TABLE___ table.
 class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___, UIScrollViewDelegate {
